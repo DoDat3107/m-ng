@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let number1s = [];
+        for (let i = 0; i < 10; i++) {
+        let num1 = parseInt(prompt("Nhập phần tử thứ " + (i + 1) + ":"));
+        number1s.push(num1);
+        }
+        let number2s = [];
+        for (let b = 0; b < 10; b++) {
+        let num2 = parseInt(prompt("Nhập phần tử thứ " + (b + 1) + ":"));
+        number2s.push(num2);}
+
+        let c = [];
+
+    // Nối các phần tử từ mảng b và mảng a vào mảng c
+    c = number2s.concat(number1s);
+
+    // Hiển thị mảng c
+    document.write("Mảng c sau khi nối từ mảng a và mảng b: " + c.join(", "));
+
+    </script>
+</body>
+</html>
